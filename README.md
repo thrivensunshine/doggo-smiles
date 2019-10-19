@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+things i want this app to
+
+first and foremost- an app that brings up a happy doggo smile
+
+
+
 In the project directory, you can run:
 
 ### `yarn start`
