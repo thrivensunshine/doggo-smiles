@@ -10,6 +10,21 @@ class App extends Component {
     search: ""
   }
 
+  componentDidMount(){
+    this.fetchData()
+  }
+
+  fetchData = () => {
+    fetch("https://dog.ceo/api/breeds/image/random")
+    .then(res => res.json){
+      .then(data => {
+        this.setState({
+          doggo: data
+        })
+      })
+    }
+  }
+
   render(){
     return(
     <div className="App">
