@@ -4,6 +4,12 @@ import './App.css';
 
 class App extends Component {
 
+  state = {
+    mood: true,
+    doggo: "",
+    search: ""
+  }
+
   render(){
     return(
     <div className="App">
@@ -13,7 +19,7 @@ class App extends Component {
         Test boodoo
         </p>
 
-    
+
       </header>
     </div>
     )
