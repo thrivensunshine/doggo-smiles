@@ -16,22 +16,25 @@ class App extends Component {
 
   fetchData = () => {
     fetch("https://dog.ceo/api/breeds/image/random")
-    .then(res => res.json){
+    .then(res => res.json)
       .then(data => {
+        console.log(data)
         this.setState({
           doggo: data
         })
       })
-    }
+
   }
 
   render(){
+    // console.log(this.state.doggo)
     return(
     <div className="App">
       <header className="App-header">
 
         <p>
         Test boodoo
+        <img src={this.state.doggo} alt="" />
         </p>
 
 
