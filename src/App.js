@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DogCard from './components/DogCard.js'
 
 class App extends Component {
 
@@ -34,7 +35,7 @@ class App extends Component {
 
         <p>
         Test boodoo
-        <img src={this.state.doggo} alt="" />
+        <DogCard doggo={this.state.doggo} />
         </p>
 
 
