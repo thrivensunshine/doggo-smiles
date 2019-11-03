@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.fetchData()
+    // this.fetchData()
   }
 
   fetchData = () => {
@@ -27,13 +27,18 @@ class App extends Component {
 
   }
 
+
+
   render(){
     // console.log(this.state.doggo)
     return(
     <div className="App">
       <header className="App-header">
 
-        <button className="myButton">Get A Doggo</button>
+        <button className="myButton" onClick = {() => {
+            console.log(this.state)
+            this.fetchData()}
+          }>Get A Doggo</button>
         <DogCard doggo={this.state.doggo} />
 
 
