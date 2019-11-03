@@ -7,6 +7,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* <a href="#" class="myButton">Get A Doggo</a> */
+
+.myButton {
+	box-shadow: 8px 22px 8px -5px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:21px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:11px 76px;
+	text-decoration:none;
+	text-shadow:0px 6px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

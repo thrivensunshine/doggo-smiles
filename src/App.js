@@ -33,10 +33,9 @@ class App extends Component {
     <div className="App">
       <header className="App-header">
 
-        <p>
-        Test boodoo
+        <button className="myButton">Get A Doggo</button>
         <DogCard doggo={this.state.doggo} />
-        </p>
+
 
 
       </header>
