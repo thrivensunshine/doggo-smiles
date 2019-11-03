@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DogCard = (props) => (
-  <div>
+  <div className="dogCard">
 <img src={props.doggo} alt="" />
   </div>
 );
