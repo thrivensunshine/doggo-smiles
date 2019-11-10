@@ -39,7 +39,7 @@ class App extends Component {
             console.log(this.state)
             this.fetchData()}
           }>Get A Doggo</button>
-        <DogCard doggo={this.state.doggo} />
+        <DogCard doggo={this.state.doggo} fetch={this.fetchData} />
 
 
 
