@@ -7,12 +7,14 @@ class App extends Component {
 
   state = {
     mood: true,
+    kitty: "",
     doggo: "",
     search: ""
   }
 
   componentDidMount(){
     // this.fetchDog()
+    this.fetchCat()
   }
 
   fetchDog = () => {
@@ -31,8 +33,9 @@ class App extends Component {
     fetch("http://placekitten.com/g/200/300")
     .then(res => res.json())
     .then(data => {
+      console.log(data)
       this.setState({
-        
+        kitty: data.message
       })
     })
 
