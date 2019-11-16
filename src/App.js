@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import DogCard from './components/DogCard.js'
+import CatCard from './components/CatCard.js'
 
 class App extends Component {
 
@@ -53,9 +54,8 @@ class App extends Component {
             console.log(this.state)
             this.fetchDog()}
           }>Get A Doggo</button>
-        <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
-
-
+          // <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
+          // <CatCard kitty={this.state.kitty} fetch={this.fetchCat} />
 
       </header>
     </div>

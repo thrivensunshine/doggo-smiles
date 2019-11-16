@@ -1,14 +1,12 @@
-
 import React from 'react';
 
+const CatCard = (props) => (
+  <div className="catCard">
+  <button onClick = {()=>{
+    console.log("works")
+  }}>Get a Kitty</button>
+  <img className="catPic" src={props.kitty} alt="" />
+  </div>
+);
 
-const  = ({}) => {
-  const handleClick = () => {};
-  return (
-    <div onClick={handleClick}></div>
-  );
-}
-
-};
-
-export default ;
+export default CatCard;
