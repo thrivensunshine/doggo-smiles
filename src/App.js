@@ -16,6 +16,7 @@ class App extends Component {
   componentDidMount(){
     // this.fetchDog()
     this.fetchCat()
+    console.log(this.state)
   }
 
   fetchDog = () => {
@@ -31,10 +32,10 @@ class App extends Component {
   }
 
   fetchCat = () => {
-    fetch("http://placekitten.com/g/200/300")
+    fetch("http://placekitten.com/200/300")
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      console.log(data + "in Cat fetch")
       this.setState({
         kitty: data.message
       })
@@ -54,9 +55,9 @@ class App extends Component {
             console.log(this.state)
             this.fetchDog()}
           }>Get A Doggo</button>
-          // <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
-          // <CatCard kitty={this.state.kitty} fetch={this.fetchCat} />
-
+          <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
+          <CatCard kitty={this.state.kitty} fetch={this.fetchCat} />
+          <img className="dogPic" src={this.state.kitty} alt="" />
       </header>
     </div>
     )
