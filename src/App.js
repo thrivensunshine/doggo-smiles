@@ -12,10 +12,10 @@ class App extends Component {
   }
 
   componentDidMount(){
-    // this.fetchData()
+    // this.fetchDog()
   }
 
-  fetchData = () => {
+  fetchDog = () => {
     fetch("https://dog.ceo/api/breeds/image/random")
     .then(res => res.json())
     .then(data => {
@@ -24,6 +24,17 @@ class App extends Component {
         doggo: data.message
         })
       })
+
+  }
+
+  fetchCat = () => {
+    fetch("http://placekitten.com/g/200/300")
+    .then(res => res.json())
+    .then(data => {
+      this.setState({
+        
+      })
+    })
 
   }
 
@@ -37,9 +48,9 @@ class App extends Component {
 
         <button className="myButton" onClick = {() => {
             console.log(this.state)
-            this.fetchData()}
+            this.fetchDog()}
           }>Get A Doggo</button>
-        <DogCard doggo={this.state.doggo} fetch={this.fetchData} />
+        <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
 
 
 
