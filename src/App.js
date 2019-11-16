@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount(){
     // this.fetchDog()
-    this.fetchCat()
+    // this.fetchCat()
     console.log(this.state)
   }
 
@@ -56,8 +56,12 @@ class App extends Component {
             this.fetchDog()}
           }>Get A Doggo</button>
           <DogCard doggo={this.state.doggo} fetch={this.fetchDog} />
+
+          <button onClick = {()=>{
+            this.fetchCat()
+            console.log("works")}}>Get a Kitty</button>
           <CatCard kitty={this.state.kitty} fetch={this.fetchCat} />
-          <img className="dogPic" src={this.state.kitty} alt="" />
+
       </header>
     </div>
     )
